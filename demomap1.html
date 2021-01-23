@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogle Map API learning</title>
+    <style>
+        #mapDisplay{
+            height: 400px; width: 500px;
+        }
+    </style>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSNO6AHL6ZUth6ITsG67VSVbW1goo5MbA&callback=mapInitial">
+    </script>
+    <script src="demomapapi.js">
+        window.onload = mapInitial;
+    </script>
+</head>
+<body>
+    <h3> Google Map API Workshop (DEMO) </h3>
+    <div id="mapDisplay"    ></div>
+    <input type="text" name="" id="testText">
+    <input type="text" name="" id="latitude">
+    <input type="text" name="" id="longtitude">
+</body>
+</html>
